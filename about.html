@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+<header>
+    <div class='container'> 
+      <div class="nav-1">
+        <ul>
+          <li><button class="button-signup">Sign Up</button></li>
+          <li><button class="button-signup">Login</button></li>
+        </ul>
+      </div>
+      
+      <div class="nav-2">
+        <div class="nav-logo">
+          <a href="index.html"><h1 class='logo'>INIXINDO</h1></a>
+          
+        </div>
+       <div class="nav-list">
+         <ul>
+           <a href="courses.html"><li>Courses</li></a>
+           <a href="academy.html"><li>Academy</li></a>
+           <a href="career.html"><li>Career</li></a>
+           <a href="about.html"><li>About Us</li></a>
+           <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search...">
+              <button class="search-button">Search</button>
+            </div>  
+         </ul>
+         
+       </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="about">
+        <div class="about-image" data-aos="fade-right">
+            <img src="assets/about1.jpg" alt="">
+            <h2>Dr. Ifik Arifin</h2>
+            <h2>Founder Inixindo</h2>
+        </div>
+
+        <div class="about-txt" data-aos="fade-left">
+            <h3><span class="red">WHO WE ARE</span></h3>
+            <h1>Lembaga Training Terbaik dan Sertifikasi Terbaik</h1>
+            <h2>Innovates from Global Resource</h2>
+            <p>Inixindo didirikan pada 15 Juli 1991, Inixindo didirikan melalui visi Ifik Arifin, lulusan Ilmu Komputer dari University of Kaiserslautern, Jerman, yang memprediksi bahwa pasar TI akan didominasi oleh Sistem Terbuka dan Internet.
+                Pada tahun 1998, Inixindo telah dipercaya oleh Cisco Systems untuk menjadi Mitra Pembelajaran Resmi untuk Indonesia.
+                <br>
+                Pada tahun 2000, Inixindo dipercaya oleh Sun Microsystems sebagai Pusat Pendidikan Sun Resmi mereka. Dan pada tahun 2001, Inixindo juga dipercaya sebagai Penyedia Pendidikan Resmi Oracle (OAEP).
+                Hingga saat ini, Inixindo telah melatih lebih dari 4.000 profesional TI per tahun, dari lebih dari 1.000 perusahaan IT yang berbeda, dari perusahaan nasional atau multinasional, dan juga bekerja sama dengan perusahaan skala multinasional besar, seperti IBM, Cisco Systems, Oracle Corp, Sun Microsystems , Microsoft, Perangkat Lunak AG, dan banyak lagi.</p>
+        </div>
+    </div>
+
+
+    <div class="findus">
+        <div class="findus-title">
+            <h2><span class="red">LET'S MEET</span></h2>
+            <h1>Find Us</h1>
+            <p>Temukan kami di 6 kota besar</p>
+        </div>
+        
+        <div class="findusmap">
+        <div class="findus-left">
+            <div class="findus-card" onpointerenter="show1()">
+                <h2>Jakarta</h2>
+                <p>Permata Senayan E2 - E5 Jl. Tentara Pelajar No.5, RW.7, Grogol Utara, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210</p>
+               
+            </div>
+            <div class="findus-card" onpointerenter="show2()">
+                <h2>Surabaya</h2>
+                <p>Gedung Kompas Gramedia Lantai 3 Jl. Raya Jemursari No. 64 Surabaya, Jawa Timur 60237</p>
+                
+            </div>
+            <div class="findus-card" onpointerenter="show3()">
+                <h2>Batam</h2>
+                <p>One Residence Batam Center Apartemen. Unit 2-AA & unit 2-AB. Jl. Engku Putri, Kel. Teluk Tering - Kec. Batam Kota, Kota Batam - Kepulauan Riau</p>
+                
+            </div>
+            <div class="findus-card" onpointerenter="show4()">
+                <h2>Makassar</h2>
+                <p>Jl. Nikel I Blok A.22 No. 18 Makassar 90222</p>
+                
+            </div>
+            <div class="findus-card" onpointerenter="show5()">
+                <h2>Jogja</h2>
+                <p>Jl. Kenari 69 Yogyakarta D.I. Yogyakarta 55165</p>
+               
+            </div>
+            <div class="findus-card" onpointerenter="show6()">
+                <h2>Bandung</h2>
+                <p>Jl. Cipaganti No.95, Pasteur Bandung, Jawa Barat 40161</p>
+                
+            </div>
+        </div>
+
+        <div class="findus-right">
+            <!-- Jakarta -->
+            <div id="mapouter-1" class="mapouter mapouter-1"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=Permata Senayan E2 - E5 Jl. Tentara Pelajar No.5, RW.7, Grogol Utara, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+            <!-- Surabaya -->
+            <div id="mapouter-2" class="mapouter mapouter-2"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=Gedung Kompas Gramedia Lantai 3 Jl. Raya Jemursari No. 64 Surabaya, Jawa Timur 60237&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+            <!-- Batam -->
+            <div id="mapouter-3" class="mapouter mapouter-3"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=One Residence Batam Center Apartemen. Unit 2-AA & unit 2-AB. Jl. Engku Putri, Kel. Teluk Tering - Kec. Batam Kota, Kota Batam - Kepulauan Riau&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+            <!-- Makassar -->
+            <div id="mapouter-4" class="mapouter mapouter-4"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl. Nikel I Blok A.22 No. 18 Makassar 90222&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+            <!-- Jogja -->
+            <div id="mapouter-5" class="mapouter mapouter-5"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl. Kenari 69 Yogyakarta D.I. Yogyakarta 55165&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+            <!-- Bandung -->
+            <div id="mapouter-6" class="mapouter-6 mapouter"><div class="gmap_canvas"><iframe width="770" height="728" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl. Cipaganti No.95, Pasteur Bandung, Jawa Barat 40161&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:728px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:728px;width:770px;}</style></div></div>
+        </div>
+
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer logo">
+        <img src="assets/Badge-Inix-Warna-Copy.png" alt="">
+        <p>Tertarik untuk mengetahui lebih lanjut mengenai Inixindo training ataupun sertifikasi? atau pertanyaan lainnya? anda dapat bertanya secara langsung melalui chat whatsapp kami.</p>
+        <div class="brands">
+        <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #fafafa;"></i></a>
+        <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #fafafa;"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #fafafa;"></i></a>
+        <a href=""><i class="fa-brands fa-youtube fa-2xl" style="color: #fafafa;"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok fa-2xl" style="color: #fafafa;"></i></a>
+    </div>
+    </div>
+
+    <div class="footer-contacts">
+        <h3>Contacts</h3>
+        <a href=""><span><i class="fa-sharp fa-solid fa-location-dot fa"></i></span>Permata Senayan E2-E5, Jakarta Selatan, Indonesia.</a>
+        <a href=""><span><i class="fa-solid fa-envelope fa"></i></span>info@inixindo.id</a>
+        <a href=""><span><i class="fa-solid fa-phone fa"></i></span>21-579-408-68</a>
+        <a href=""><span><i class="fa-regular fa-calendar fa"></i></span>Senin-Jumat: 08:00 - 17:00 WIB</a>
+    </div>
+
+    <div class="footer-services">
+        <h3>Services</h3>
+        <a href="">Training</a>
+        <a href="">Sertifikasi</a>
+        <a href="">Events</a>
+    </div>
+
+    <div class="footer-subscribe">
+        <h3>Subscribe</h3>
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="email">
+        <button class="button">Subscribe</button>
+    </div>
+  </footer>
+
+
+<script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<body>
+    
+</body>
+</html>
